@@ -19,8 +19,8 @@ import xml.etree.ElementTree as ET
 
 # need to test
 LOGIN_API = "https://api.gotokeep.com/v1.1/users/login"
-RUN_DATA_API = "https://api.gotokeep.com/pd/v3/stats/detail?dateUnit=all&type=running&lastDate={last_date}"
-RUN_LOG_API = "https://api.gotokeep.com/pd/v3/runninglog/{run_id}"
+RUN_DATA_API = "https://api.gotokeep.com/pd/v3/stats/detail?dateUnit=all&type=cycling&lastDate={last_date}"
+RUN_LOG_API = "https://api.gotokeep.com/pd/v3/cyclinglog/{run_id}"
 
 HR_FRAME_THRESHOLD_IN_DECISECOND = 100  # Maximum time difference to consider a data point as the nearest, the unit is decisecond(分秒)
 
@@ -139,7 +139,7 @@ def parse_raw_data_to_nametuple(
         return
     d = {
         "id": int(keep_id),
-        "name": "run from keep",
+        "name": "ride from keep",
         # future to support others workout now only for run
         "type": "Ride",
         "start_date": datetime.strftime(start_date, "%Y-%m-%d %H:%M:%S"),
