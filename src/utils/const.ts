@@ -45,15 +45,15 @@ const IS_CHINESE = true;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
-  return `我用 App 记录自己骑行 ${yearLength} 年了，下面列表展示的是${yearStr}的数据`;
+  return `我记录了 ${yearLength} 年的骑行过程，下面列表展示的是${yearStr}的数据`;
 };
 const ENGLISH_INFO_MESSAGE = (yearLength: number, year: string): string =>
   `cycing Journey with ${yearLength} Years, the table shows year ${year} data`;
 
 // not support English for now
 const CHINESE_LOCATION_INFO_MESSAGE_FIRST =
-  '我骑过了一些地方，希望随着时间推移，地图点亮的地方越来越多';
-const CHINESE_LOCATION_INFO_MESSAGE_SECOND = '不要停下来，不要停下来！';
+  '希望随着时间推移，地图点亮的地方越来越多';
+const CHINESE_LOCATION_INFO_MESSAGE_SECOND = '不要停下来，看我还能骑到哪！';
 
 const INFO_MESSAGE = IS_CHINESE ? CHINESE_INFO_MESSAGE : ENGLISH_INFO_MESSAGE;
 const FULL_MARATHON_RUN_TITLE = IS_CHINESE ? '燃脂骑行' : 'Burning Cycling';
