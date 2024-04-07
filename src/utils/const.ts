@@ -53,7 +53,7 @@ const ENGLISH_INFO_MESSAGE = (yearLength: number, year: string): string =>
 // not support English for now
 const CHINESE_LOCATION_INFO_MESSAGE_FIRST =
   '希望随着时间推移，地图点亮的地方越来越多';
-const CHINESE_LOCATION_INFO_MESSAGE_SECOND = '不要停下来，看我还能骑到哪！';
+const CHINESE_LOCATION_INFO_MESSAGE_SECOND = '不要停下来，看看我还能骑到哪！';
 
 const INFO_MESSAGE = IS_CHINESE ? CHINESE_INFO_MESSAGE : ENGLISH_INFO_MESSAGE;
 const FULL_MARATHON_RUN_TITLE = IS_CHINESE ? '燃脂骑行' : 'Burning Cycling';
